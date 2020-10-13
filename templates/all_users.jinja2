@@ -1,0 +1,9 @@
+All records:
+
+Total users - {{ users|count }}
+{% for user in users %}
+Name/Surname  - {{ user }}:
+Phones:
+{% for number in user.phones %}    {{number}}
+{% endfor %}====================================
+{% endfor %}
